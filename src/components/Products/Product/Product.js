@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                     {product.price}
                 </Typography>
             </div>
-            <Typography varient='h2' color='textSecondary'>
+            <Typography varient='body2' color='textSecondary'>
                 {product.description}
             </Typography>
         </CardContent>
