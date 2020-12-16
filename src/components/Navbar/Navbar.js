@@ -12,7 +12,7 @@ const Navbar = () => {
             <AppBar postion="fixed" color = "inherit" className = { classes.appBar}>
                 <Toolbar>
                     <Typography varient = "h6" className = {classes.title} color = "inherit">
-                        <img src={logo} alt = "Ecommerce Website" height = "25px" />
+                        <img src={logo} alt = "Ecommerce Website" height = "25px" className = {classes.image}/>
                         EcoWeb
                     </Typography>
                     <div className={classes.grow} />
