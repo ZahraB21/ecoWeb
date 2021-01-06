@@ -21,7 +21,7 @@ const products = [
     }
 ];
 
-const Products = () => {
+const Products = ({ product }) => {
     const classes = useStyles();
     return (
         <main className = {classes.content}>
