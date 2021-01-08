@@ -19,7 +19,7 @@ const App = () => {
     const handleAddToCart = async (productId, quantity) => {
         const items = await commerce.cart.add(productId, quantity);
 
-        setCart(items);
+        setCart(items.cart);
     }
 
     useEffect(() => {
