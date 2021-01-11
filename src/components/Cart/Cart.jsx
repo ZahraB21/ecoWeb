@@ -9,7 +9,7 @@ const Cart = () => {
     }
 
     const FilledCart = () => {
-        
+        <Typography variant = "subtitle1">Your cart items: </Typography>
     }
 
     return (
