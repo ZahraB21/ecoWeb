@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Button, Grid } from '@material-ui/core';
 
 const Cart = ( { cart }) => {
-    const isEmpty = true;
+    const isEmpty = !cart.line_items.length;
 
     const EmptyCart = () => {
         <Typography variant = "subtitle1">You have no items in your shopping cart, start adding some!</Typography>
@@ -11,7 +11,7 @@ const Cart = ( { cart }) => {
     const FilledCart = () => {
         <>
             <Grid container spacing ={3}>
-                
+
             </Grid>
         </>
     }
