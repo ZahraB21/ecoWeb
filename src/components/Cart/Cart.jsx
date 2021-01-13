@@ -11,7 +11,10 @@ const Cart = ( { cart }) => {
     const FilledCart = () => {
         <>
             <Grid container spacing ={3}>
-
+                {cart.line_items.map(item => 
+                <Grid item xs={12} sm={4} key={item.id}>
+                    <div>{item.name}</div>
+                </Grid>)}
             </Grid>
         </>
     }
