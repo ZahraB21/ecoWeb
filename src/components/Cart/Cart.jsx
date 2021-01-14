@@ -4,14 +4,18 @@ import { Container, Typography, Button, Grid } from '@material-ui/core';
 import useStyles from './styles';
 
 const Cart = ( { cart }) => {
-    const isEmpty = !cart.line_items.length;
+    const isEmpty = !cart.line_items;
+    const classes = useStyles();
 
     const EmptyCart = () => {
+        return (
         <Typography variant = "subtitle1">You have no items in your shopping cart, start adding some!</Typography>
+        );
     }
+    
 
     const FilledCart = () => {
-        <>
+        return (<>
             <Grid container spacing ={3}>
                 {cart.line_items.map(item => 
                 <Grid item xs={12} sm={4} key={item.id}>
@@ -25,7 +29,7 @@ const Cart = ( { cart }) => {
                     <Button className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">Checkout</Button>
                 </div>
             </div>
-        </>
+        </>);
     }
 
     return (
